@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>AAI Partners</title>
+</head>
+<body class="dark">
+    <div class="navbar">
+        <ul>
+            <li><a class="active">AAI Partners</a></li>
+
+            <li class="right"><a href="./admin">Editor</a></li>
+            <li class="right"><a href="#" id="themeChanger">Theme</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        
+        <div class="blob wid-1 searchbox">
+            <div class="wid-1" style="margin: auto; padding: 0 0 1%">
+                <h1>AAI Partners</h1>
+            </div>
+            <div class="wid-1" style="margin: auto; padding: 0 0 1%; text-align: center">
+                <span style="font-weight: 500;">Need Help? This program will allow you to find business and community partners effectively through the use of tags. Tag selection will help you filter out information and find partners to your liking! 
+                </span>
+            </div>
+            <div class="form-area" id="theForm">
+                <div class="wid-1" style="flex:1">
+                    <span style="margin:auto">Search:</span>
+                    <input type="text" id="field1" name="field1" placeholder="" required="required">
+                </div>
+                <div>
+                    <button id="buttonClick" style="margin:auto">Submit</button>
+                </div>
+                <div class="wid-1" style="display: flex; flex-wrap: wrap;">
+                    <div class="wid-1" id="search-tag-div">
+                        <div>
+                            <span id="description"><b>Search Tags /<br>Resources Available:</b><br>(Scroll for more)<span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wid-1 sort-chooser" style="justify-content:right;">
+                    <div>
+                        <span style="color: var(--text-color)">Sort:</label>
+                        <select name="sort-choose" id="sort-choose">
+                            <option value="Name">Name</option>
+                            <option value="Employee"># of Employees</option>
+                        </select>
+                        <button id="sortOrderButton" value="Ascending">Ascending</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <script src="script.js"></script>
+</body> 
+</html>

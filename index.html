@@ -57,8 +57,8 @@
         <script src="https://www.puck-js.com/puck.js"></script>
         <script>
             function readFile() {
-                Puck.eval("require('Storage').read", (data) => {
-                    console.log(data);
+                Puck.eval("require('Storage').read(steps)", (data) => {
+                    document.getElementById("BangleResult").innerHTML = data;
                 });
             }
         </script>
@@ -77,8 +77,10 @@
             <div class="wid-1">
         </div>
 
-        <div class="blob wid-1" id="BangleResult">
-
+        <div class="blob wid-1">
+            <div class="wid-1">
+                <span id="description" id="BangleResult"></span>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

@@ -55,6 +55,13 @@
         </div>   -->
 
         <script src="https://www.puck-js.com/puck.js"></script>
+        <script>
+            function readFile() {
+                Puck.eval("require('Storage').read", (data) => {
+                    console.log(data);
+                });
+            }
+        </script>
         <div class="blob wid-1">
             <div class="form-area" id="theForm">
                 <div class="wid-1" style="flex:1">
@@ -63,12 +70,16 @@
                 </div>
                 <div>
                     <button onClick="Puck.setTime()" style="margin:auto">Set Time</button>
+                    <button onClick="Puck.write('Bangle.buzz()\n')" style="margin:auto">Buzz</button>
+                    <button onClick="readFile()" style="margin:auto">Read File</button>
                 </div>
             </div>
             <div class="wid-1">
         </div>
 
+        <div class="blob wid-1" id="BangleResult">
 
+        </div>
     </div>
     <script src="script.js"></script>
 </body> 
